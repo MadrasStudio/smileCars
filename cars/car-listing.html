@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Smile Cars</title>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="shortcut icon" href="assets/ico/favicon.ico">
+
+    <!-- CSS Global -->
+    <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/plugins/bootstrap-select/css/bootstrap-select.min.css" rel="stylesheet">
+    <link href="assets/plugins/fontawesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/plugins/prettyphoto/css/prettyPhoto.css" rel="stylesheet">
+    <link href="assets/plugins/owl-carousel2/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="assets/plugins/owl-carousel2/assets/owl.theme.default.min.css" rel="stylesheet">
+    <link href="assets/plugins/animate/animate.min.css" rel="stylesheet">
+    <link href="assets/plugins/swiper/css/swiper.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="assets/plugins/jquery-ui/jquery-ui.min.css" rel="stylesheet">
+    <link href="assets/plugins/countdown/jquery.countdown.css" rel="stylesheet">
+    <link href="assets/plugins/datetimepicker/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="assets/css/theme.css" rel="stylesheet">
+
+    <!-- Head Libs -->
+    <script src="assets/plugins/modernizr.custom.js"></script>
+    <!-- Constant -->
+    <script src="assets/const/car-list.js"></script>
+    
+    <!--[if lt IE 9]>
+    <script src="assets/plugins/iesupport/html5shiv.js"></script>
+    <script src="assets/plugins/iesupport/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body id="home" class="wide">
+<a href="https://wa.me/919600102101/?text=Hi, Smilecars" title="click to open whatsapp chat" target="_blank"><button class="btn btn-success bottomright"><i class="fa fa-whatsapp"></i></button></a>
+
+<!-- WRAPPER -->
+<div class="wrapper">
+
+    <!-- HEADER -->
+    <header class="header fixed">
+        <div class="header-wrapper">
+            <div class="container-fluid">
+                <div class="col-sm-12 col-md-12 col-xs-12">
+                    <div class="row">
+                        <div class="col-xs-4 col-sm-4 col-md-2 col-lg-2">
+                            <!-- Logo -->
+                            <div class="logo w-100">
+                                <a href="index.html"><img src="assets/img/logosmile.jpg" alt="Rent It" class="w-100"/></a>
+                            </div>
+                            <!-- /Logo -->
+                        
+                        </div>
+                        
+                        
+                        
+                        <div class=" col-xs-none col-xs-2 col-sm-2 col-md-7 col-lg-7 p-0 toggle">
+                            <!-- Mobile menu toggle button -->
+                            <a href="#" class="menu-toggle btn btn-theme-transparent"><i class="fa fa-bars"></i></a>
+                            <!-- /Mobile menu toggle button -->
+                        
+                            <!-- Navigation -->
+                            <nav class="navigation closed clearfix navbar-center">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <!-- navigation menu -->
+                                        <a href="#" class="menu-toggle-close btn"><i class="fa fa-times"></i></a>
+                                        <ul class="nav sf-menu f-s-15">
+                                            <li class="active"><a href="index.html">Home</a></li>
+                                            <li><a href="about.html">About Us</a></li>
+                                            <li><a href="car-listing.html">Pick your Wheels</a></li>
+                                            <li><a href="covid-19.html">Covid-19</a></li>
+                                            <li><a href="why-smile-cars.html">WHY SMILE CARS</a></li>
+                                            <li><a href="faq-terms.html">FAQs</a></li>
+                                            <li><a href="contact.html">Contact Us</a></li>
+                                        </ul>
+                                        <!-- /navigation menu -->
+                        
+                                    </div>
+                                </div>
+                                <!-- Add Scroll Bar -->
+                                <div class="swiper-scrollbar"></div>
+                            </nav>
+                        
+                            <!-- /Navigation -->
+                        </div>
+
+                        <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 search-bar">
+                            <!-- Search Bar -->
+                            <div class="search form-group d-flex">
+                                <input id="myInput" type="text" name="myCountry" placeholder="Search Your Car" class="form-control search-bar-input">
+                                <button type="button" onclick="searchCar()"><i class="fa fa-search"></i></button>
+                            </div>
+                            <!-- /Search Bar -->
+                        </div>
+
+                        
+                    </div>
+                    
+                </div>
+
+                
+
+                
+
+               
+
+                
+
+            </div>
+            
+        </div>
+
+    </header>
+    <!-- /HEADER -->
+
+    <!-- CONTENT AREA -->
+    <div class="content-area">
+
+        <!-- BREADCRUMBS -->
+        <section class="page-section breadcrumbs text-center">
+            <div class="container">
+                <div class="page-header">
+                    <h1>Pick your Wheels</h1>
+                </div>
+                <ul class="breadcrumb">
+                    <li><a href="#">Home</a></li>
+                    <li class="active">Pick your Wheels</li>
+                </ul>
+            </div>
+        </section>
+        <!-- /BREADCRUMBS -->
+        <div id="filterBtn" class="filter-btn"><button class="btn btn-link" onclick="goToFilter()">Go to filters</button></div>
+        <!-- PAGE WITH SIDEBAR -->
+        <section class="page-section with-sidebar sub-page">
+            <div class="container">
+                <div class="row">
+                    <!-- CONTENT -->
+                    <div class="col-md-9 content car-listing" id="content">
+
+                        <!-- Car Listing -->
+                        <div id="carListingContent">
+
+                        </div>
+                        
+
+                        <!-- /Car Listing -->
+
+                        <!-- Pagination -->
+                        <!-- <div class="pagination-wrapper">
+                            <ul class="pagination">
+                                <li class="disabled"><a href="#"><i class="fa fa-angle-double-left"></i> Previous</a></li>
+                                <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">Next <i class="fa fa-angle-double-right"></i></a></li>
+                            </ul>
+                        </div> -->
+                        <!-- /Pagination -->
+
+                    </div>
+                    <!-- /CONTENT -->
+
+                    <!-- SIDEBAR -->
+                    <aside class="col-md-3 sidebar" id="sidebar">
+                        <!-- widget -->
+                        <div class="widget shadow widget-find-car">
+                            <h4 class="widget-title">Find Best Rental Car <span class="btn-link clear-filter" onclick="clearFilter()">Clear Filter</span></h4>
+                            <!-- <button type="button" id="formSearchSubmit3" class="btn btn-submit btn-theme btn-theme-dark btn-block"
+                                onclick="clearFilter()">clear filter</button> -->
+                            <div class="widget-content">
+                                <!-- Search form -->
+                                <div class="form-search light">
+                                    <form name="filterForm">
+
+                                        <div class="form-group selectpicker-wrapper">
+                                            <label>Select Category</label>
+                                            <select class="selectpicker input-price" data-live-search="true" data-width="100%" data-toggle="tooltip"
+                                                title="Select" name="category" id="category" >
+                                                <option>All</option>
+                                                <option>5 Seater SUV</option>
+                                                <option>7 Seater SUV</option>
+                                                <option>8 Seater SUV</option>
+                                                <option>Big Hatch</option>
+                                                <option>Sedan</option>
+                                                <option>Small Hatchback</option>
+                                        
+                                            </select>
+                                        </div>
+                                        
+                                        <div class="form-group selectpicker-wrapper">
+                                            <label>Select Type</label>
+                                            <select class="selectpicker input-price" data-live-search="true" data-width="100%" data-toggle="tooltip"
+                                                title="Select" name="type" id="type">
+                                                <option value="All">All</option>
+                                                <option value="MANUAL">MANUAL</option>
+                                                <option value="AUTO">AUTO</option>
+                                                <!-- <option>MANUAL/AUTO</option> -->
+                                            </select>
+                                        </div>
+
+                                        <hr width="100">
+
+                                       
+
+                                        
+
+                                        <button type="button" id="formSearchSubmit3" class="btn btn-submit btn-theme btn-theme-dark btn-block" onclick="filterCars()">Find Car</button>
+
+                                    </form>
+                                </div>
+                                <!-- /Search form -->
+                            </div>
+                        </div>
+                        <!-- /widget -->
+                        <!-- widget price filter -->
+                        
+                        <!-- /widget price filter -->
+                        <!-- widget testimonials -->
+                        <div class="widget shadow">
+                            <div class="widget-title">Testimonials</div>
+                            <div class="testimonials-carousel">
+                                <div class="owl-carousel" id="testimonials">
+                                    <div class="testimonial">
+                                        <div class="media">
+                                            <div class="media-body">
+                                                <div class="testimonial-text">Very good rental car service, from day 1 when we came to know about the service the communication was consistent throughout with them. Self rental cars are blessing for users like us it's convenient, comfortable and easy to go. Nice car, good service,very much impressed.</div>
+                                                <div class="testimonial-name">Prabhu mani</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="testimonial">
+                                        <div class="media">
+                                            <div class="media-body">
+                                                <div class="testimonial-text">Service is very good. Good cars at affordable rates. Good communication and customer service. The owner immediately attends to any problem you have. Thank you.</div>
+                                                <div class="testimonial-name">Johnathan James</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="testimonial">
+                                        <div class="media">
+                                            <div class="media-body">
+                                                <div class="testimonial-text">I recently hired a Suzuki Swift and It was a great experience. The car was well maintained and the hiring process was surprisingly Easy and hassle free. The price was reasonable. Overall a great experience. Will sure use this service again. Thanks.</div>
+                                                <div class="testimonial-name">Harikrishnan Ravichandran</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /widget testimonials -->
+                        <!-- widget helping center -->
+                        <div class="widget shadow widget-helping-center">
+                            <h4 class="widget-title">Help Center</h4>
+                            <div class="widget-content">
+                                <p>No : 1076, 44th street, TVS Colony, Anna Nagar West Extn, Chennai - 600 101</p>
+                                <p><a href="tel:04443850256">044 - 43850256</a></p>
+                                <p><a href="mailto:info@smilecars.net">info@smilecars.net</a></p>
+                                <div class="button">
+                                    <a href="contact.html" class="btn btn-block btn-theme btn-theme-dark">Support Center</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /widget helping center -->
+                    </aside>
+                    <!-- /SIDEBAR -->
+
+                </div>
+            </div>
+        </section>
+        <!-- /PAGE WITH SIDEBAR -->
+
+        <!-- PAGE -->
+        
+        <!-- /PAGE -->
+
+    </div>
+    <!-- /CONTENT AREA -->
+
+    <!-- FOOTER -->
+    <footer class="footer dark">
+        <div class="footer-meta">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-sm-12">
+                        <p class="btn-row text-center">
+                            <a href="#" class="btn btn-theme btn-icon-left facebook"><i class="fa fa-facebook"></i>FACEBOOK</a>
+                            <a href="#" class="btn btn-theme btn-icon-left twitter"><i class="fa fa-twitter"></i>TWITTER</a>
+                          
+                        </p>
+                        <div class="copyright">&copy; 2021 Smile Cars | No : 1076, 44th street, TVS Colony, Anna Nagar West Extn, Chennai - 600 101 | <a href="tel:04443850256">044 - 43850256</a> / <a href="tel:9962097400">9962097400</a> / <a href="tel:9092555444">9092555444</a> / <a href="tel:9962056400">9962056400</a> <br> Design & Developed by <a href="https://themadrasstudio.com/" rel="dofollow">The Madras Studio</a></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- /FOOTER -->
+
+    <div id="to-top" class="to-top"><i class="fa fa-angle-up"></i></div>
+
+</div>
+<!-- /WRAPPER -->
+
+<!-- JS Global -->
+<script src="assets/plugins/jquery/jquery-1.11.1.min.js"></script>
+<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/plugins/bootstrap-select/js/bootstrap-select.min.js"></script>
+<script src="assets/plugins/superfish/js/superfish.min.js"></script>
+<script src="assets/plugins/prettyphoto/js/jquery.prettyPhoto.js"></script>
+<script src="assets/plugins/owl-carousel2/owl.carousel.min.js"></script>
+<script src="assets/plugins/jquery.sticky.min.js"></script>
+<script src="assets/plugins/jquery.easing.min.js"></script>
+<script src="assets/plugins/jquery.smoothscroll.min.js"></script>
+<!--<script src="assets/plugins/smooth-scrollbar.min.js"></script>-->
+<script src="assets/plugins/swiper/js/swiper.jquery.min.js"></script>
+<script src="assets/plugins/datetimepicker/js/moment-with-locales.min.js"></script>
+<script src="assets/plugins/datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+
+<!-- JS Page Level -->
+<script src="assets/js/theme-ajax-mail.js"></script>
+<script src="assets/plugins/jquery-ui/jquery-ui.min.js"></script>
+<script src="assets/plugins/isotope/jquery.isotope.min.js"></script>
+<script src="assets/js/theme.js"></script>
+
+<script src="assets/js/car-listing.js"></script>
+<script src="assets/js/search.js"></script>
+
+</body>
+</html>
